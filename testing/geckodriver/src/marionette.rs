@@ -1156,7 +1156,7 @@ impl MarionetteCommand {
                 let mut data = BTreeMap::new();
                 data.insert("id".to_string(), Json::Null);
                 data.insert("highlights".to_string(), Json::Array(vec![]));
-                data.insert("full".to_string(), Json::Boolean(false));
+                data.insert("full".to_string(), Json::Boolean(true));
                 (Some("takeScreenshot"), Some(Ok(data)))
             },
             TakeElementScreenshot(ref e) => {
